@@ -25,8 +25,8 @@ include("connect.php");
 
                 // Check if the query executed successfully
                 if ($result && mysqli_num_rows($result) > 0) {
-                    $row = mysqli_fetch_assoc($result); // Use fetch_assoc for clarity
-                    echo htmlspecialchars($row['name']); // Prevent XSS attacks
+                    $row = mysqli_fetch_assoc($result); 
+                    echo htmlspecialchars($row['name']); 
                 } else {
                     echo "User not found.";
                 }
