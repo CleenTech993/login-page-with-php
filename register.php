@@ -53,7 +53,7 @@ if (isset($_POST['login'])) {
             echo "Incorrect email or password.";
         }
     } else {
-        echo "Incorrect email or password.";
+        echo "Cant Login.";
     }
     $stmt->close();
 }
