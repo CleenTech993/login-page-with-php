@@ -15,7 +15,7 @@
           <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
           <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
           <input class="login-button" type="submit" value="Login" name="login">
-          <div class="cta" onclick="show()">Don't have an account?<span >register</span> </div>
+          <div class="cta" onclick="show()">Don't have an account? <span >Register</span> </div>
           
         </form>
         <div class="social-account-container">
