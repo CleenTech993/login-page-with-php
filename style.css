@@ -149,6 +149,11 @@
     color: rgb(170, 170, 170);
     cursor: pointer;
   }
+
+  .cta:hover {
+    color: black;
+
+  }
   #register {
     display: none;
   }
