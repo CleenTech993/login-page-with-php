@@ -1,6 +1,8 @@
 <?php
 include 'connect.php';
 
+$error = '';
+
 if (isset($_POST['register'])) {
     $firstName = $_POST['name'];
     $email = $_POST['email'];
@@ -54,6 +56,10 @@ if (isset($_POST['login'])) {
         }
     } else {
         echo "Cant Login.";
+        session_start();
+            $_SESSION['email'] = $row['email'];
+            header("Location: index.php");
+            exit();
     }
     $stmt->close();
 }

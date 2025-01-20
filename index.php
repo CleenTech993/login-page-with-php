@@ -10,6 +10,12 @@
 <body>
     <div class="container" id="login">
         <div class="heading">Login</div>
+         <!-- Display the error message if it exists -->
+         <?php if (!empty($error)): ?>
+            <div class="error-message" style="color: red; margin-bottom: 15px;">
+                <?php echo htmlspecialchars($error); ?>
+            </div>
+        <?php endif; ?>
         <form method="post" action="register.php" class="form">
           <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
           <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
@@ -42,6 +48,12 @@
 
       <div class="container" id="register">
         <div class="heading">Register</div>
+         <!-- Display the error message if it exists -->
+         <?php if (!empty($error)): ?>
+            <div class="error-message" style="color: red; margin-bottom: 15px;">
+                <?php echo htmlspecialchars($error); ?>
+            </div>
+        <?php endif; ?>
         <form action="register.php" class="form" method="post">
             <input required="" class="input" type="text" name="name" id="name" placeholder="Enter Your Name">
            
