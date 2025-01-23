@@ -28,12 +28,12 @@ if (isset($_SESSION['error'])) {
     <!-- LOGIN FORM -->
     <div class="container" id="login" style="display: block;">
         <div class="heading">Login</div>
-        <form method="post" action="login.php" class="form">
+        <form method="post" action="register.php" class="form">
             <input required class="input" type="email" name="email" placeholder="E-mail">
             <input required class="input" type="password" name="password" placeholder="Password">
             <span class="forgot-password"><a href="#">Forgot Password?</a></span>
             <input class="login-button" type="submit" value="Login" name="login">
-            <div class="cta" onclick="showRegister()">Don't have an account? <span>Register</span></div>
+            <div class="cta" onclick="show()">Don't have an account? <span>Register</span></div>
         </form>
 
         <!-- Social Icons -->
@@ -67,7 +67,7 @@ if (isset($_SESSION['error'])) {
             <input required class="input" type="email" name="email" placeholder="E-mail">
             <input required class="input" type="password" name="password" placeholder="Password">
             <input class="login-button" type="submit" value="Register" name="register">
-            <div class="cta" onclick="showLogin()">Already have an account? <span>Login</span></div>
+            <div class="cta" onclick="show2()">Already have an account? <span>Login</span></div>
         </form>
 
         <!-- Social Icons -->
